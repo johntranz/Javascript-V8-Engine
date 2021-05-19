@@ -17,16 +17,29 @@ namespace hw {
 
     void Sum(const FunctionCallbackInfo<Value>& args) {
         Isolate* isolate = args.GetIsolate();
-        
+
         double total = args[0].As<Number>()->Value() + args[1].As<Number>()->Value();
         Local<Number> num = Number::New(isolate, total);
 
+        args.GetReturnValue().Set(num);
+    }
+          
+    void SumTestSpeed(const FunctionCallbackInfo<Value>& args) {            
+        Isolate* isolate = args.GetIsolate();            
+
+        int total = 0;
+        for (int i = 0; i < 100000000; i++) {               
+            total++;
+        }
+
+        Local<Number> num = Number::New(isolate, total);
         args.GetReturnValue().Set(num);
     }
 
     void init(Local<Object> exports) {
         NODE_SET_METHOD(exports, "hw", Method);
         NODE_SET_METHOD(exports, "sum", Sum);
+        NODE_SET_METHOD(exports, "sum_test_speed", SumTestSpeed);
     }
 
     NODE_MODULE(NODE_GYP_MODULE_NAME, init)
