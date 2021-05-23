@@ -6,7 +6,7 @@ You can install `node-gyp` using `npm`
 npm install -g node-gyp
 ```
 
-## Configure and Buildding
+## Configure and Building
 ```bash
 node-gyp configure build
 ```
