@@ -67,11 +67,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-
 ### Deployment with firebase
 
 ### `firebase deploy`
 
-Link demo: [https://clone-ea4c4.web.app]
+Link demo: [https://clone-ea4c4.web.app]-> sometimes there are still errors when paying
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
