@@ -85,7 +85,7 @@ $ npm run dev // run it locally
 $ npm run build // this will build the server code to es5 js codes and generate a dist file
 ```
 
-## Deploy Server to [Heroku](https://dashboard.heroku.com/)
+## Deploy Server to [Heroku](https://dashboard.heroku.com/) [Demo](https://blog-basic-98.herokuapp.com/posts)
 
 ```terminal
 $ npm i -g heroku
@@ -101,7 +101,7 @@ $ npm run deploy:heroku
 
 ### After creating heroku
 
-remember to update the file of [client/webpack.prod.js](https://github.com/amazingandyyy/mern/blob/master/client/webpack.prod.js)
+remember to update the file of [client/webpack.prod.js]()
 
 ```javascript
  'API_URI': JSON.stringify('https://your-super-amazing-heroku-app.herokuapp.com')
@@ -120,6 +120,8 @@ remember to update the file of [client/webpack.prod.js](https://github.com/amazi
 | redux: ^3.7.2                 | morgan: ^1.7.0        |
 | redux-saga: ^2.1.0            |
 | react-redux: ^4.0.0           |                       |
+
+## Deploy Frontend to Netlify [Demo](https://blog-basic.netlify.app/)
 
 # Screenshots of this project
 
