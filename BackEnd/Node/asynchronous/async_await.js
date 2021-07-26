@@ -1,4 +1,27 @@
 // Async Await
+const askForPhoneNumber = (callback) => {
+  let phoneNumber;
+
+  console.log('Ask for Jane"s phone number ');
+
+  console.log('Waiting !');
+
+  setTimeout(() => {
+    phoneNumber = 123456789;
+    console.log('Find correct phone number');
+    callback(phoneNumber, onThePhone);
+  }, 1000);
+};
+
+const charge = (phonNumber, callback) => {
+  console.log('charge battery');
+
+  setTimeout(() => {
+    console.log('Done');
+    callback(phonNumber);
+  }, 0);
+};
+
 const AskForPhoneNumber = () => {
   console.log('Ask my friend');
   console.log('Detect');
@@ -46,8 +69,9 @@ const Calling = (phoneNumber) => console.log(`Calling ... ${phoneNumber}`);
 
 const Action = async () => {
   try {
-    const phoneNumber = await AskForPhoneNumber();
-    await Charge();
+    //const phoneNumber = await AskForPhoneNumber();
+    const phoneNumber = await askForPhoneNumber(charge);
+    //await Charge();
     console.log(phoneNumber);
   } catch (error) {
     console.log('Error: ', error);

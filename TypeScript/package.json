@@ -1,0 +1,14 @@
+{
+  "name": "ts-crash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Huy Tran",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9",
+    "typescript": "^4.3.5"
+  }
+}
