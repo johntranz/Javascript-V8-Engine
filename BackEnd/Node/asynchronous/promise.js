@@ -56,7 +56,7 @@ const Charge = () => {
 
   const chargingAction = new Promise((resolve, reject) => {
     setTimeout(() => {
-      batteryFailure = false;
+      batteryFailure = true;
 
       if (!batteryFailure) {
         console.log('Full Battery');
@@ -74,7 +74,7 @@ const Calling = (phoneNumber) => console.log(`Calling ... ${phoneNumber}`);
 
 AskForPhoneNumber()
   .then((phoneNumber) => {
-    Charge(phoneNumber)
+    Charge()
       .then(() => Calling(phoneNumber))
       .catch((err) => console.log(`Error: ${err}`));
   })

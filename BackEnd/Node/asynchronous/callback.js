@@ -3,7 +3,7 @@
 /* const askForPhoneNumber = () => {
   let phoneNumber;
 
-  console.log('Ask for Jane"s phone number ');
+  console.log('Ask for Huy"s phone number ');
 
   console.log('Waiting !');
 
@@ -17,7 +17,7 @@
 
 const phoneNumberFound = askForPhoneNumber();
 
-console.log(phoneNumberFound);*/
+console.log(phoneNumberFound); */
 
 // ==> Wrong solution
 
@@ -66,7 +66,7 @@ const charge = (phonNumber, callback) => {
   setTimeout(() => {
     console.log('Done');
     callback(phonNumber);
-  }, 2000);
+  }, 0);
 };
 const onThePhone = (phoneNumber) => {
   console.log('talking:', phoneNumber);
